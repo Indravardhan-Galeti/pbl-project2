@@ -6,6 +6,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'sku', 'price', 'current_stock', 'min_stock_level')
     list_filter = ('min_stock_level',)
     search_fields = ('name', 'sku', 'description')
+    # new change 
 
 @admin.register(Stock)
 class StockAdmin(admin.ModelAdmin):
